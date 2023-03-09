@@ -1,0 +1,142 @@
+
+*{
+    /* border:solid 1px #000; */
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+body{
+    /* position:absolute; */
+    display:inline-block;
+}
+#varsion{
+    position:fixed;
+    display:none;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: #232222ea;
+    z-index: 99;
+    color: #FFF;
+}
+#varsion > p{
+    border: 1px #CCC double;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+}
+header{position:fixed;z-index: 1;top: 0;width:100%;user-select:none;z-index: 100;}
+header>*{
+    color:#FFF;
+    display:inline-flex;
+}
+div.siteName{position:relative;width:100%;background-color:#2f4f4f;}
+div.siteName > b{font-size: larger; padding:0 5vw 0 5px;}
+div.siteName > b.taskbar{ margin:0 5px;}
+div.siteName > b#info{position:absolute; right:0;padding:0 10px 0 5px;}
+.headerInlineNav>ul>li{
+    margin:0 3px;
+    display:inline-flex;
+}
+
+/* Aside menu */
+#taskList.question{overflow-y:scroll;position:fixed;top:5%;width:25%;height:100%;background-color: #CCC;user-select:none;}
+#taskList.question>ul>li {
+    margin:4px 0;
+    border:solid .5px #000;
+    font-weight:bolder;}
+small.requiredItem>ul>li{
+    font-weight:lighter;
+    margin:0 5px 5px 5px;
+    background-color:#2f4f4f;
+    color: #FFF;
+    padding-left: 25px;}
+small[class="requiredItem"]{display:none;}
+h3{width:100%;border: 1px splid #2f4f4f;}
+b.questions{cursor: pointer;}
+
+/* Main */
+main{position:absolute;right:0;padding:0 -5px 5px 5px;width:75%;top:30px;}
+article{width:60%;}
+iframe {width:100%;border:0;border: #2f4f4f .1px solid;}
+iframe[class*="answer"]{
+    /* border:solid 1px #F00; */
+    margin:0 5px 0 5px;
+    width:100%;
+    height:100%;
+    margin-top: 0;
+  }
+.frame{height:300px;margin-top: 5px;display:none;}
+/* iframe::-webkit-scrollbar{display: none;} */
+
+#buttonList{background-color: #CCC;position:fixed;top:5%;right:0;display:inline-block;width: 29%;}
+button[id*='button']{width:43%;height:22px;margin:0 5px 1px 5px;}
+/* .buttonBox{height: 50%;} */
+
+#textbox{width:90%;height:340px;margin:0 5px 1px 5px;}
+/* .text{height: 50%;} */
+/* チェックボックス */
+
+.ECM_CheckboxInput {
+    position:absolute;
+    right:0;
+    cursor: pointer;
+    }
+    .ECM_CheckboxInput-Input {
+    
+        margin:5px 1px 0 0;
+    width: 0;
+    opacity: 0;
+    }
+    .ECM_CheckboxInput:hover{
+    background: #bdbdbd0d !important;
+    }
+    .ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput{
+    border: dashed 2px #333333;
+    }
+    .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
+    background: #959595;
+    }
+    .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55%;
+    height: 3.5px;
+    border-radius: 1px;
+    transform: translate(-4px, 0px) rotateZ(-135deg);
+    transform-origin: 2px 2px;
+    background: rgba(255, 255, 255, 0.9);
+    }
+    .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 3.5px;
+    border-radius: 1px;
+    transform: translate(-3px, 0px) rotateZ(-45deg);
+    transform-origin: 2px 2px;
+    background: rgba(255, 255, 255, 0.9);
+    }
+    .ECM_CheckboxInput-DummyInput {
+    position: relative;
+    top: -20px;
+    left: -10px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: solid 2px transparent;
+    background: rgba(112, 106, 106, 0.7);
+    border-radius: 4px;
+    }
+    .ECM_CheckboxInput-LabelText {
+    margin-left: 12px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    }
